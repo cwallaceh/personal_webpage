@@ -1,0 +1,11 @@
+# Precompiled
+*.pyc
+
+# Database files
+*.db
+
+# DS
+*.DS_store
+
+# Cache
+*/__pycache__/
