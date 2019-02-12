@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+<!--home section-->
+<section class="home" id="home">
+  <div class="container">
+    <div class="row vertical-align">
+      <div class="col-lg-6">
+        <h1>Hello there!</h1>
+        <p>Welcome to my personal space, I am a <strong>data scientist</strong> and python programmer with a background in physics and computer science. I enjoy working with data, machine learning, web programming and physics.</p>
+        <p><a class="btn btn-lg" href="#contact" role="button">Let's talk!</a></p>
+      </div>
+    <div class='col-lg-6'>
+      <svg width="500" height="500"></svg>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!--about section-->
+<section class="about" id="about">
+  <div class="container">
+    <div class="row vertical-align">
+      <div class="col-lg-3">
+        <img src="../static/self.png" class="center-block">
+      </div>
+      <div class="col-lg-9">
+        <h1>About me.</h1>
+        <p>I was born in Monterrey, México. Graduated with a B.E. degree in Engineering Physics from Monterrey Institute of Technology and Higher Education, and later acquired a masters degree in Computer Science.</p> 
+        <p>I'm a Python programmer with experience in data extraction, data parsing/filtering, data viz, unsupervised/supervised learning, machine learning, modeling and feature selection. Ability to develop and implement models and algorithms to large a scale production environment in the cloud.</p>
+        <p>I'm currently working as a Data Scientist for the Mexican Fintech Startup: <a href="http://www.konfio.mx">Konfío</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--work section-->
+<section class="work" id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Publications.</h1>
+        <h3>A smart grid electricity market with multiagents, smart appliances and combinatorial auctions</h3>
+        <p>R. F. Brena, C. W. Handlin and P. Angulo, 2015 IEEE First International Smart Cities Conference (ISC2), Guadalajara, 2015, pp. 1-6.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--blog section-->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>------</h1>
+        <h1>Recent posts.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        {% for post in posts %}
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.body }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--contact section-->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Let's have a beer!</h1>
+        <a title="" href="mailto:cwallaceh@gmail.com" rel="external"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--footer-->
+<footer class="footer">
+  <div class="container">
+    <ul class="social">
+      <li><a title="" href="https://www.facebook.com/groups/469523539899326/" rel="external">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+      </a></li>
+      <li><a title="" href="https://www.linkedin.com/in/carlhandlin/" rel="external">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+      </a></li>
+      <li><a title="" href="https://github.com/cwallaceh" rel="external">
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a></li>
+    </ul>
+    <p><small>&#9400; {{ year }} Carl W. Handlin, Designed and Coded in CDMX</small></p>
+  </div>
+</footer>
+{% endblock %}

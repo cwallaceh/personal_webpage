@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  line-height: 1.5em;
+}
+
+html, body {
+    height:100%;
+    line-height: 1.5em;
+}
+
+section {
+    padding-top:70px;  
+    padding-bottom:50px; 
+    min-height:calc(100% - 1px);
+}
+
+.icon-bar {
+    background-color:#fff;
+}
+
+.fa-5x {
+    color: #212529;
+}
+
+.fa-stack {
+    color: #212529;
+}
+
+.container {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    width: 45px!important;
+}
+ 
+.footer p {
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid #212529;
+    border-radius: 0px;
+    color: #212529;
+}
+
+#chart {
+  width: 550px;
+  height: 550px;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.navbar-trans {
+    background-color:#fff;
+    border:0;
+}
+
+.navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
+    border-color: #000;
+}
+
+.navbar a{
+    color: #000;
+}
+
+.nav>li {
+    margin-right: 10px;
+    border: 1px solid #fff;
+    background-color:#fff;
+}
+
+.nav>li:hover {
+    border: 1px solid #000;
+    background-color:#fff;
+}
+
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+    background-color: white;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+/* Bootstrap padding fix */
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.fa-stack:hover {
+  color: #4e555d;
+}
+
+.fa-5x:hover {
+    color: #4e555d;
+}
