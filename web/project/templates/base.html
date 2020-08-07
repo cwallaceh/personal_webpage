@@ -2,10 +2,14 @@
 <html lang="en">
 <html>
   <head>
-    <title>Carl W. Handlin</title>
+    <title>Carl W. Handlin | Data Scientist and Machine Learning Engineer</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Carl W. Handlin, Data Scientist and Machine Learning Engineer"/>
+    <meta name="keywords" content="Carl W. Handlin, Data Science, Machine Learning, Artificial Intelligence"/>
+    <meta name="author" content="Carl W. Handlin"/>
+    <meta name="copyright" content="Carl W. Handlin"/>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon">
@@ -18,60 +22,56 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="../static/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <!-- D3 -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170570844-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-170570844-1');
+    </script>
+
+    {% block extracss %}{% endblock %}
   </head>
   <body>
-    <!-- navbar start-->
-    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar-collapsible">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#home">Top</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>&nbsp;</li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--wrapper start-->
-    <div class="wrapper" id="wrapper">
-      {% with messages = get_flashed_messages() %}
-      {% if messages %}
-      <ul>
-      {% for message in messages %}
-          <li>{{ message }} </li>
-      {% endfor %}
-      </ul>
-      {% endif %}
-      {% endwith %}
-      {% block content %}{% endblock %}
-    </div><!--wrapper end-->
+    {% block navbar %}{% endblock %}
+    {% block content %}{% endblock %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Plot js -->
-    <script type="text/javascript" src="../static/force-directed-graph.js"></script>
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- Main js -->
-    <script src="../static/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    {% block extrajs %}{% endblock %}
   </body>
 </html>

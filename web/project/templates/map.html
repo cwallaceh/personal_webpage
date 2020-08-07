@@ -1,0 +1,64 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block extracss %}
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7/leaflet.css" />
+<style>
+    html, body, #container /*, and all other map parent selectors*/ {
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+    }
+    #map {
+      width: auto;
+      height: 100%;
+    }
+</style>
+{% endblock %}
+
+{% block navbar %}
+<!-- navbar start-->
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Return</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div id="container">
+    <div id="map"></div>
+</div> <!-- /container -->
+{% endblock %}
+
+{% block extrajs %}
+<script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7/leaflet.js">
+</script>
+<script>
+    var map = L.map('map').setView([19.45, -99.12], 10);
+    mapLink = 
+        '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+    L.tileLayer(
+        'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; ' + mapLink + ' Contributors',
+        maxZoom: 18,
+        }).addTo(map);
+    $.getJSON("shapes/coloniascdmx.json", function(data){
+    // L.geoJson function is used to parse geojson file and load on to map
+        L.geoJson(data).addTo(map);
+    });
+</script>
+{% endblock %}
