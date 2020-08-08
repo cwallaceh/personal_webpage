@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 10px;
 }
@@ -18,26 +18,20 @@ p {
 }
 
 html, body {
-    height:100%;
-    line-height: 1.5em;
-}
-
-section {
-    padding-top:70px;  
-    padding-bottom:50px; 
-    min-height:calc(100% - 1px);
+  height:100%;
+  line-height: 1.5em;
 }
 
 .icon-bar {
-    background-color:#fff;
+  background-color:#fff;
 }
 
 .fa-5x {
-    color: #000;
+  color: #000;
 }
 
 .fa-stack {
-    color: #000;
+  color: #000;
 }
 
 .container {
@@ -45,32 +39,38 @@ section {
   margin-top: 5px;
 }
 
+.contact {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
 .footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer ul {
-    text-align: center;
-    padding-left: 0;
+  text-align: center;
+  padding-left: 0;
 }
 
 .footer ul li {
-    display: inline-block;
-    width: 45px!important;
+  display: inline-block;
+  width: 45px!important;
 }
  
 .footer p {
-    text-align: center;
+  text-align: center;
 }
 
 .btn {
-    border: solid #000;
-    border-radius: 0px;
-    color: #000;
+  border: solid #000;
+  border-radius: 0px;
+  color: #000;
 }
 
-#home {
-  padding-top: 140px;
+.section {
+  min-height: 100%;
 }
 
 #chart {
@@ -78,52 +78,46 @@ section {
   height: 550px;
 }
 
-#contact {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .navbar-trans {
-    background-color:#fff;
-    border:0;
+  background-color:#fff;
+  border:0;
 }
 
 .navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-    border-color: #000;
+  border-color: #000;
 }
 
 .navbar a{
-    color: #000;
+  color: #000;
 }
 
 .nav>li {
-    margin-right: 10px;
-    border: solid #fff;
-    background-color:#fff;
+  margin-right: 10px;
+  border: solid #fff;
+  background-color:#fff;
 }
 
 .nav>li:hover {
-    border: solid #000;
-    background-color:#fff;
+  border: solid #000;
+  background-color:#fff;
 }
 
 .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
-    background-color: white;
+  background-color: white;
 }
 
 .vertical-align {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .img-responsive {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* Bootstrap padding fix */
 .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .links line {
@@ -141,7 +135,7 @@ section {
 }
 
 .fa-5x:hover {
-    color: #4e555d;
+  color: #4e555d;
 }
 
 .text-justify {
