@@ -9,3 +9,6 @@
 
 # Cache
 */__pycache__/
+
+# Images
+*.tar
